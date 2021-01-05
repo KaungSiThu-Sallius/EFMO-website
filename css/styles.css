@@ -170,7 +170,7 @@
 
 
 
-/* -----------------------------second_nav----------------------------- */
+/* -----------------------------home----------------------------- */
 .home_bg {
     background-image: url("../image/1.jpg");
     height: 700px;
@@ -179,6 +179,29 @@
     background-size: cover;
 }
 
+.home_bg .text{
+    color: var(--pink);
+    background-color: rgba(14, 40, 18, 0.4);
+    border: 1px solid transparent;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 240px;
+}
+.home_bg .text .quote{
+    font-size: 25px;
+}
+
+.home_bg .text .author{
+    opacity: 0.6;
+}
+
+.home_bg .text::before{
+    content: "\"";
+    position: absolute;
+    padding: 5px;
+    background-color: inherit;
+
+}
 /* ----------------------------- media ----------------------------- */
 @media (max-width: 991px) {
 
@@ -241,6 +264,17 @@
         margin-top: 61px !important;
     }
 
+    .home_bg .text .quote{
+        font-size: 19px;
+        line-height: 34px;
+        letter-spacing: 1.2px;
+    }
+    .home_bg .text{
+        background-color: rgba(14, 40, 18, 0.7);
+
+    }
+ 
+
 }
 
 @media (max-width: 767px){
@@ -252,12 +286,15 @@
         top: -55px;
         left: 8.9% !important;
     }
+    .home_bg .text{
+        margin-top: 180px;
+    }
 
 }
 
 @media (max-width: 575px) {
     .navbar-logo .logo {
-        left: 2.1% 
+        left: 2% 
     }
 
     .circle {
@@ -265,7 +302,7 @@
     }
 
     .first_nav p{
-        font-size: 12px;
+        font-size: 15px;
 
     }
     .home_bg{
