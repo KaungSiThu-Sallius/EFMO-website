@@ -11,14 +11,16 @@
 .first_nav {
     color: var(--darkgreen);
     background-color: var(--lightBlue);
-    padding: 8px;
+    padding: 7px;
     font-size: 15px;
     font-family: var(--font2);
 }
 
 .first_nav p {
-    margin: 0;
+    margin: 0 auto;
+    letter-spacing: 2px;
 }
+
 
 /* -----------------------------second_nav----------------------------- */
 
@@ -30,11 +32,11 @@
     margin-right: 10px;
 }
 
-.navbar-logo .logo{
+.navbar-logo .logo {
     width: 200px;
     position: absolute;
-    left: 171px;
-    top: 16px;
+    left: 9.5%;
+    top: 15px;
     z-index: 2;
 }
 
@@ -46,9 +48,9 @@
     display: inline-block;
     position: absolute;
     z-index: 1;
-    left: 166px;
+    left: 9%;
     top: -14px;
-  }
+}
 
 
 .navbar-logo {
@@ -123,7 +125,7 @@
     left: 0px;
     transition-duration: 0.6s;
     transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    background-color:var(--pink);
+    background-color: var(--pink);
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     margin-top: 10px;
@@ -167,7 +169,28 @@
 }
 
 
+
+/* -----------------------------second_nav----------------------------- */
+.home_bg {
+    background-image: url("../image/1.jpg");
+    /* The image used */
+    height: 700px;
+    /* You must set a specified height */
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
+}
+
+/* ----------------------------- media ----------------------------- */
 @media (max-width: 991px) {
+
+    .first_nav p{
+        margin: 0;
+    }
+
     #navbarSupportedContent ul li a {
         padding: 12px 30px;
     }
@@ -203,53 +226,40 @@
         bottom: -25px;
         left: -25px;
     }
-    .navbar-logo .logo{
+
+    .navbar-logo .logo {
         width: 150px;
-        left: 42.6%;
-        /* top: 10px; */
         top: -33px;
         z-index: 1;
     }
-    
+
     .circle {
         height: 160px;
         width: 160px;
-        left: 42%;
-        /* top: -14px; */
         top: -54px;
         z-index: 0;
-      }
-      .nav_item_parent{
-          margin-top: 30px !important;
-      }
-
-}
-
-
-@media (max-width: 575px){
-    .navbar-logo .logo{
-        width: 150px;
-        left: 37%;
-        /* top: 10px; */
-        top: -33px;
-        z-index: 1;
     }
-    
+    .first_nav p{
+        margin-left: auto;
+    }
+    .nav_item_parent {
+        margin-top: 61px !important;
+    }
+
+}
+
+@media (max-width: 767px){
+    .home_bg{
+        height: 500px;
+    }
+
     .circle {
-        height: 160px;
-        width: 160px;
-        left: 36%;
-        /* top: -14px; */
-        top: -54px;
-        z-index: 0;
-      }
+        top: -55px;
+        left: 8.9% !important;
+    }
+
 }
 
-/* -----------------------------second_nav----------------------------- */
-.home_slider{
-    z-index: -2;
-}
+@media (max-width: 575px) {
 
-.home_slider.carousel-item img{
-    height: 50px !important;
 }
