@@ -196,11 +196,11 @@
 }
 
 .home_bg .text::before{
-    content: "\"";
+    font-family: "Font Awesome 5 Free"; font-weight: 900;
+    content: "\f10d";
     position: absolute;
-    padding: 5px;
-    background-color: inherit;
-
+    top: 234px;
+    font-size: 40px;
 }
 /* ----------------------------- media ----------------------------- */
 @media (max-width: 991px) {
@@ -273,7 +273,9 @@
         background-color: rgba(14, 40, 18, 0.7);
 
     }
- 
+    .home_bg .text::before{
+        top: 208px;
+    }
 
 }
 
@@ -289,12 +291,16 @@
     .home_bg .text{
         margin-top: 180px;
     }
+    .home_bg .text::before{
+        top: 159px;
+        font-size: 30px;
+    }
 
 }
 
 @media (max-width: 575px) {
     .navbar-logo .logo {
-        left: 2% 
+        left: 1.9%; 
     }
 
     .circle {
@@ -307,5 +313,15 @@
     }
     .home_bg{
         height: 350px;
+    }
+    .home_bg .text{
+        margin-top: 114px;
+    }
+    .home_bg .text::before {
+        top: 95px;
+        font-size: 24px;
+    }
+    .home_bg .text .quote {
+        font-size: 16px;
     }
 }
