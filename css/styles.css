@@ -173,15 +173,10 @@
 /* -----------------------------second_nav----------------------------- */
 .home_bg {
     background-image: url("../image/1.jpg");
-    /* The image used */
     height: 700px;
-    /* You must set a specified height */
     background-position: center;
-    /* Center the image */
     background-repeat: no-repeat;
-    /* Do not repeat the image */
     background-size: cover;
-    /* Resize the background image to cover the entire container */
 }
 
 /* ----------------------------- media ----------------------------- */
@@ -261,5 +256,19 @@
 }
 
 @media (max-width: 575px) {
+    .navbar-logo .logo {
+        left: 2.1% 
+    }
 
+    .circle {
+        left: 1% !important;
+    }
+
+    .first_nav p{
+        font-size: 12px;
+
+    }
+    .home_bg{
+        height: 350px;
+    }
 }
