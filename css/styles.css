@@ -325,3 +325,58 @@
         font-size: 16px;
     }
 }
+
+
+
+
+
+/* -----------------------------About Us----------------------------- */
+.our_story{
+    font-family: Oleo Script;
+    color:  #92CCA4;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    text-decoration: #92CCA4 wavy underline;
+}
+.paragraph{
+    font-family: Playfair Display;
+    color: #0E2812;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+.our_members{
+    font-family: Oleo Script;
+    color:  #92CCA4;
+    text-decoration: #92CCA4 wavy underline;
+    font-size: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+}
+.efmo_members{
+    width: 10rem;
+    height: 10rem;
+    border: 1px solid #caffbf;
+    border-radius: 50%;
+}
+.img-caption{
+    font-family: Oleo Script;
+    color:  #92CCA4;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    font-weight: 500;
+
+}
+.quote{
+    font-family: Oleo Script;
+    color: #0E2812;
+    font-size: 2rem;
+    
+}
+.author{
+    margin-bottom: 2rem;
+}
+section{
+    align-items: center;
+}
