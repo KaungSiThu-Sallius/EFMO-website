@@ -1,4 +1,18 @@
+// <!-- ----------------------------- go to top -----------------------------  -->
+$(document).ready(function(){
+    $(window).scroll(function(){
+        if($(this).scrollTop() > 200){
+            $("#topBtn").fadeIn();
+        }else{
+            $("#topBtn").fadeOut();
+        }
+    })
 
+    $('#topBtn').click(function(){
+        $('html , body').animate({scrollTop: 0},600);
+    })
+});
+// <!-- ----------------------------- NavBar -----------------------------  -->
 function test() {
     var tabsNewAnim = $('#navbarSupportedContent');
     var selectorNewAnim = $('#navbarSupportedContent').find('li').length;
@@ -37,3 +51,5 @@ $(window).on('resize', function () {
 $(".navbar-toggler").click(function () {
     setTimeout(function () { test(); });
 });
+
+
