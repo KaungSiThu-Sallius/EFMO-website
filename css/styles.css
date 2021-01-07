@@ -6,26 +6,28 @@
     --pink: #FCF1ED;
     --darkgreen: #0E2812;
 }
+
 #topBtn {
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 30px;
-  z-index: 99;
-  font-size: 18px;
-  border: none;
-  outline: none;
-  background-color: var(--darkgreen);
-  color: var(--pink);
-  cursor: pointer;
-  padding: 5px 10px;
-  border-radius: 4px;
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: var(--darkgreen);
+    color: var(--pink);
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 4px;
 }
 
 #topBtn:hover {
-  background-color: rgba(14, 40, 18, 0.5);
+    background-color: rgba(14, 40, 18, 0.5);
 }
-.preLoader{
+
+.preLoader {
     width: 100%;
     height: 100vh;
     background-color: var(--pink);
@@ -33,9 +35,11 @@
     align-items: center;
     justify-content: center;
 }
-.s_color{
+
+.s_color {
     background-color: var(--darkgreen);
 }
+
 .heading {
     font-family: var(--font1);
     color: var(--darkgreen);
@@ -81,7 +85,7 @@
     padding: 2.8rem 0;
 }
 
-svg{
+svg {
     display: none;
 }
 
@@ -317,30 +321,35 @@ svg{
 }
 
 /* ----------------------------- member ----------------------------- */
-.member{
+.member {
     background-color: var(--lightBlue);
 }
-.member .card{
+
+.member .card {
     border: none;
     border-radius: 15px;
     box-shadow: 2px 2px 18px rgba(14, 40, 18, 0.1);
     color: rgba(14, 40, 18, 0.8);
 }
 
-.member .card:hover{
+.member .card:hover {
     box-shadow: 2px 2px 18px rgba(14, 40, 18, 0.2);
 }
-.member .card-body h5{
+
+.member .card-body h5 {
     font-family: var(--font1);
 }
-.member .card-body p{
+
+.member .card-body p {
     font-family: var(--font2);
     color: rgba(14, 40, 18, 0.7);
 }
-.member .card img{
+
+.member .card img {
     border-radius: 15px;
 
 }
+
 .member .card-img-top {
     height: 180px;
     object-fit: cover;
@@ -509,17 +518,20 @@ svg{
 
     .text_box {
         width: 250px;
-        
+
     }
-    .text{
+
+    .text {
         line-height: 26px;
     }
-    .text::before{
+
+    .text::before {
         content: url(../image/kanote3.png);
         left: -31px;
         top: 164px;
     }
-    .text::after{
+
+    .text::after {
         content: url(../image/kanote4.png);
         right: -31px;
         top: 164px;

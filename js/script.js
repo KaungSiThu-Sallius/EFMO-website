@@ -1,19 +1,19 @@
 // <!-- ----------------------------- go to top -----------------------------  -->
-$(document).ready(function(){
-    $(window).scroll(function(){
-        if($(this).scrollTop() > 200){
+$(document).ready(function () {
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 200) {
             $("#topBtn").fadeIn();
-        }else{
+        } else {
             $("#topBtn").fadeOut();
         }
     })
 
-    $('#topBtn').click(function(){
-        $('html , body').animate({scrollTop: 0},600);
+    $('#topBtn').click(function () {
+        $('html , body').animate({ scrollTop: 0 }, 600);
     })
 });
 // <!-- ----------------------------- preloader -----------------------------  -->
-$(window).on("load",function(){
+$(window).on("load", function () {
     $(".preLoader").fadeOut(2000);
 })
 // <!-- ----------------------------- NavBar -----------------------------  -->
