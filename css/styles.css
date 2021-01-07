@@ -227,7 +227,7 @@ svg{
     background-size: cover;
 }
 
-.home_bg .text {
+.home_bg .H_text {
     color: var(--pink);
     background-color: rgba(14, 40, 18, 0.4);
     border: 1px solid transparent;
@@ -236,15 +236,15 @@ svg{
     margin-top: 240px;
 }
 
-.home_bg .text .quote {
+.home_bg .H_text .quote {
     font-size: 25px;
 }
 
-.home_bg .text .author {
+.home_bg .H_text .author {
     opacity: 0.6;
 }
 
-.home_bg .text::before {
+.home_bg .H_text::before {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     content: "\f10d";
@@ -403,18 +403,18 @@ svg{
         margin-top: 61px !important;
     }
 
-    .home_bg .text .quote {
+    .home_bg .H_text .quote {
         font-size: 19px;
         line-height: 34px;
         letter-spacing: 1.2px;
     }
 
-    .home_bg .text {
+    .home_bg .H_text {
         background-color: rgba(14, 40, 18, 0.7);
 
     }
 
-    .home_bg .text::before {
+    .home_bg .H_text::before {
         top: 208px;
     }
 
@@ -461,11 +461,11 @@ svg{
         left: 8.7% !important;
     }
 
-    .home_bg .text {
+    .home_bg .H_text {
         margin-top: 180px;
     }
 
-    .home_bg .text::before {
+    .home_bg .H_text::before {
         top: 159px;
         font-size: 30px;
     }
@@ -525,16 +525,16 @@ svg{
         height: 350px;
     }
 
-    .home_bg .text {
+    .home_bg .H_text {
         margin-top: 114px;
     }
 
-    .home_bg .text::before {
+    .home_bg .H_text::before {
         top: 95px;
         font-size: 24px;
     }
 
-    .home_bg .text .quote {
+    .home_bg .H_text .quote {
         font-size: 16px;
     }
 
