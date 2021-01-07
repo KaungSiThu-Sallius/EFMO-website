@@ -12,6 +12,10 @@ $(document).ready(function(){
         $('html , body').animate({scrollTop: 0},600);
     })
 });
+// <!-- ----------------------------- preloader -----------------------------  -->
+$(window).on("load",function(){
+    $(".preLoader").fadeOut(2000);
+})
 // <!-- ----------------------------- NavBar -----------------------------  -->
 function test() {
     var tabsNewAnim = $('#navbarSupportedContent');
@@ -51,5 +55,7 @@ $(window).on('resize', function () {
 $(".navbar-toggler").click(function () {
     setTimeout(function () { test(); });
 });
+
+
 
 
