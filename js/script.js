@@ -1,6 +1,6 @@
 // <!-- ----------------------------- preloader -----------------------------  -->
 $(window).on('load',function(){
-    $('.loader-container').fadeOut(3000);
+    $('.loader-container').fadeOut(2000);
 })
 // <!-- ----------------------------- go to top -----------------------------  -->
 $(document).ready(function () {
@@ -57,55 +57,95 @@ $(".navbar-toggler").click(function () {
 });
 
 // <!-- ----------------------------- slide in scroll  -----------------------------  -->
-(function($) {
-    $.fn.visible = function(partial) {
+// (function($) {
+//     $.fn.visible = function(partial) {
       
-        var $t            = $(this),
-            $w            = $(window),
-            viewTop       = $w.scrollTop(),
-            viewBottom    = viewTop + $w.height(),
-            _top          = $t.offset().top,
-            _bottom       = _top + $t.height(),
-            compareTop    = partial === true ? _bottom : _top,
-            compareBottom = partial === true ? _top : _bottom;
+//         var $t            = $(this),
+//             $w            = $(window),
+//             viewTop       = $w.scrollTop(),
+//             viewBottom    = viewTop + $w.height(),
+//             _top          = $t.offset().top,
+//             _bottom       = _top + $t.height(),
+//             compareTop    = partial === true ? _bottom : _top,
+//             compareBottom = partial === true ? _top : _bottom;
       
-      return ((compareBottom <= viewBottom) && (compareTop >= viewTop));
+//       return ((compareBottom <= viewBottom) && (compareTop >= viewTop));
   
-    };
+//     };
       
-  })(jQuery);
+//   })(jQuery);
 
-  $(window).scroll(function(event) {
+//   $(window).scroll(function(event) {
   
-    $(".member .card").each(function(i, el) {
-      var el = $(el);
-      if (el.visible(true)) {
-        el.addClass("come-in"); 
-      } 
-    });
+//     $(".member .card").each(function(i, el) {
+//       var el = $(el);
+//       if (el.visible(true)) {
+//         el.addClass("come-in"); 
+//       } 
+//     });
     
-  });
+//   });
 
-  var win = $(window);
-var allMods = $(".module");
+//   var win = $(window);
+// var allMods = $(".module");
 
-// Already visible modules
-allMods.each(function(i, el) {
-  var el = $(el);
-  if (el.visible(true)) {
-    el.addClass("already-visible"); 
-  } 
-});
+// // Already visible modules
+// allMods.each(function(i, el) {
+//   var el = $(el);
+//   if (el.visible(true)) {
+//     el.addClass("already-visible"); 
+//   } 
+// });
 
-win.scroll(function(event) {
+// win.scroll(function(event) {
   
-  allMods.each(function(i, el) {
-    var el = $(el);
-    if (el.visible(true)) {
-      el.addClass("come-in"); 
-    } 
+//   allMods.each(function(i, el) {
+//     var el = $(el);
+//     if (el.visible(true)) {
+//       el.addClass("come-in"); 
+//     } 
+//   });
+  
+// });
+
+var timer = 0;
+function recheck() {
+    var window_top = $(this).scrollTop();
+    var window_height = $(this).height();
+    var view_port_s = window_top;
+    var view_port_e = window_top + window_height;
+    
+    if ( timer ) {
+      clearTimeout( timer );
+    }
+    
+    $('.member .cardm').each(function(){
+      var block = $(this);
+      var block_top = block.offset().top;
+      var block_height = block.height();
+      
+      if ( block_top < view_port_e ) {
+        timer = setTimeout(function(){
+          block.addClass('show-block');
+        },100);       
+      } else {
+        timer = setTimeout(function(){
+          block.removeClass('show-block');
+        },100);          
+      }
+    });
+}
+
+$(function(){
+  $(window).scroll(function(){
+    recheck();
   });
   
+  $(window).resize(function(){
+     recheck();   
+  });
+  
+  recheck();
 });
 
 
