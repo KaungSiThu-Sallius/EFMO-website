@@ -6,7 +6,10 @@
     --pink: #FCF1ED;
     --darkgreen: #0E2812;
 }
-
+body{
+    color: var(--darkgreen);
+    font-style: var(--font1);
+}
 /* ----------------------------- go to btn ----------------------------- */
 #topBtn {
     display: none;
@@ -362,7 +365,23 @@ svg {
 .what_we_do .small_heading::after {
     width: 80px;
 }
+/* -----------------------------mission----------------------------- */
+.mission{
+    background-color: var(--pink);
+}
+.mission .small_heading::before,
+.mission .small_heading::after {
+    width: 75px;
+}
 
+.mission .content h5{
+    color: rgba(14, 40, 18, 0.8);
+    margin-bottom: 18px;
+}
+.mission .content p{
+    color: rgba(14, 40, 18, 0.6);
+    line-height: 27px;
+}
 /* ----------------------------- About Us ----------------------------- */
 /* ----------------------------- about top ----------------------------- */
 .about_bg {
