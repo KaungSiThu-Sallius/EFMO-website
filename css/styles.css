@@ -293,6 +293,75 @@ svg {
     font-size: 40px;
 }
 
+/* ----------------------------- about_us ----------------------------- */
+.about_us {
+    background-color: var(--pink);
+}
+
+.about_us .text_box::before,
+.about_us .text_box::after {
+    top: -3px;
+}
+
+.small_heading {
+    font-size: 14px;
+    color: var(--green);
+    font-family: var(--font2);
+}
+
+.small_heading::before,
+.small_heading::after {
+    border-top: 1px solid var(--green);
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    width: 50px;
+    content: "";
+}
+
+/* ----------------------------- What we do ----------------------------- */
+.what_we_do {
+    background-color: #fff;
+}
+
+.what_we_do .box {
+    background-color: var(--lightBlue);
+    width: 100%;
+    margin: 0 auto;
+    font-family: var(--font1);
+    color: var(--darkgreen);
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(14, 40, 18, 0.7);
+    height: 220px;
+}
+.what_we_do .box p{
+    line-height: 32px;
+}
+
+
+.what_we_do .box i {
+    padding-top: 14px;
+    padding-left: 2px;
+    font-size: 30px;
+}
+
+.bg_i {
+    width: 60px;
+    background-color: var(--pink);
+    height: 60px;
+    margin: 0 auto;
+    border-radius: 50%;
+    margin-bottom: 18px;
+
+}
+
+.what_we_do .small_heading::before,
+.what_we_do .small_heading::after {
+    width: 80px;
+}
+
 /* ----------------------------- About Us ----------------------------- */
 /* ----------------------------- about top ----------------------------- */
 .about_bg {
@@ -486,17 +555,20 @@ svg {
 .footer .iframe3 {
     display: none;
 }
-.text_for_fb{
+
+.text_for_fb {
     display: none;
 }
+
 /* ----------------------------- copyright ----------------------------- */
 
-.copyright{
+.copyright {
     height: 15px;
     background-color: var(--lightBlue);
     font-size: 10px;
     color: rgba(14, 40, 18, 0.5);
 }
+
 /* ----------------------------- media ----------------------------- */
 @media (max-width: 1199px) {
     .footer .circle {
@@ -585,6 +657,11 @@ svg {
         margin-top: 61px !important;
     }
 
+    .about_us .text_box::before,
+    .about_us .text_box::after {
+        top: 32px;
+    }
+
     .home_bg .H_text .quote {
         font-size: 19px;
         line-height: 34px;
@@ -632,8 +709,12 @@ svg {
     .second-middle_one .hr1 {
         margin-left: 288px;
     }
-    .second-middle_one{
+
+    .second-middle_one {
         margin-top: 20px;
+    }
+    .what_we_do .box{
+        height: 280px;
     }
 }
 
@@ -671,6 +752,11 @@ svg {
 
     .text_box::after {
         right: -72px;
+    }
+
+    .about_us .text_box::before,
+    .about_us .text_box::after {
+        top: -18px;
     }
 
     .circle {
@@ -727,6 +813,9 @@ svg {
     .footer p {
         font-size: 15px;
     }
+    .what_we_do .box{
+        height: 210px;
+    }
 
 }
 
@@ -761,6 +850,10 @@ svg {
         top: 164px;
     }
 
+    .about_us .text_box::before,
+    .about_us .text_box::after {
+        top: 88px;
+    }
 
     .navbar-logo .logo {
         left: 2%;
@@ -878,20 +971,27 @@ svg {
     .footer .iframe3 {
         display: block;
     }
-    .s_section_padding .hr1{
+
+    .s_section_padding .hr1 {
         display: none;
     }
-    .s_section_padding{
+
+    .s_section_padding {
         padding-top: 10px;
         width: 100px;
         margin: 0 auto;
     }
-    .text_for_fb{
+
+    .text_for_fb {
         display: inline;
         text-align: center;
     }
-    .second-middle_one{
+
+    .second-middle_one {
         margin: 0;
+    }
+    .what_we_do .box{
+        height: 215px;
     }
 
 }
