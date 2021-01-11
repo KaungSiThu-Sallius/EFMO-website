@@ -68,7 +68,7 @@ function recheck() {
       clearTimeout( timer );
     }
     
-    $('.member .cardm').each(function(){
+    $('.scroll .cardm').each(function(){
       var block = $(this);
       var block_top = block.offset().top;
       var block_height = block.height();
