@@ -535,6 +535,78 @@ svg {
     color: var(--darkgreen) !important;
 }
 
+/* ----------------------------- Carousel ----------------------------- */
+
+.classes .firstcarouselsection {
+    background-color: #edfcf9;
+}
+
+.classes .secondcarouselsection {
+    background-color: #fcf1ed;
+}
+
+.classes .donation {
+    font-size: 2rem;
+    font-family: Oleo Script;
+    color: #87af93;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.classes .carousel {
+    margin: 1.5rem;
+}
+
+.classes .carousel-inner {
+    height: auto;
+}
+
+.classes .carousel-control-prev {
+    margin-left: -45px;
+}
+
+.classes .carousel-control-next {
+    margin-right: -45px;
+}
+
+.classes .carousel-control-prev-icon,
+.classes .carousel-control-next-icon {
+    height: 100px;
+    width: 100px;
+    background-image: none;
+    right: -60px;
+}
+
+.classes .carousel-control-next-icon:after {
+    content: '>';
+    font-size: 55px;
+    color: #87af93;
+}
+
+.classes .carousel-control-prev-icon:after {
+    content: '<';
+    font-size: 55px;
+    color: #87af93;
+}
+
+.classes .carousel-indicators {
+    bottom: -50px;
+}
+
+.classes .carousel-indicators li {
+    width: 16px;
+    height: 16px;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: #87af93;
+    border-radius: 50%;
+}
+
+@media(min-width:992px) {
+    .secondcarouselsection img,.firstcarouselsection img{
+        height: 850px;
+    }
+}
 
 
 /* ----------------------------- About Us ----------------------------- */
@@ -1019,6 +1091,9 @@ svg {
     .testimonial .carousel .carousel-indicators {
         bottom: -5px;
     }
+    .secondcarouselsection img{
+        width: 70vw;
+    }
 
 }
 
@@ -1204,6 +1279,7 @@ svg {
 
 
     }
+
     .testimonial .carousel-control.right,
     .testimonial .carousel-control.left {
         top: 74px;
